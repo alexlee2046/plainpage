@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BASE = "https://alexlee2046.github.io/plainpage/"
 STORE = "https://apps.apple.com/app/id6815329484"
 ISSUES = "https://github.com/alexlee2046/plainpage/issues"
-LANGUAGES = {"zh-Hans": "简体中文", "zh-Hant": "繁體中文", "en": "English", "ja": "日本語", "ko": "한국어", "fr": "Français", "es": "Español", "pt-BR": "Português (Brasil)", "it": "Italiano"}
+LANGUAGES = {"zh-Hans": "简体中文", "zh-Hant": "繁體中文", "en": "English", "ja": "日本語", "ko": "한국어", "fr": "Français", "es": "Español", "pt-BR": "Português (Brasil)", "it": "Italiano", "ru": "Русский"}
 PAGES = ("index.html", "support.html", "privacy.html")
 
 
@@ -135,7 +135,7 @@ def render(lang, page, data):
 def generate():
     locales = json.loads((ROOT / "content/locales.json").read_text())
     if set(locales) != set(LANGUAGES):
-        raise ValueError("Expected exactly nine languages")
+        raise ValueError("Expected exactly ten languages")
     files = {output_path(lang, page): render(lang, page, locales[lang])
              for lang in LANGUAGES for page in PAGES}
     urls = [BASE + route(lang, page) for lang in LANGUAGES for page in PAGES]

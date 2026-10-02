@@ -4,10 +4,10 @@
 
 ## 内容与生成
 
-- `content/locales.json`：九语言唯一内容源；不要直接编辑生成的 HTML。
+- `content/locales.json`：十语言唯一内容源；不要直接编辑生成的 HTML。
 - `tools/build_site.py`：Python 标准库生成器。JSON-LD 问答与可见问答来自同一内容。
-- 简中保留原 `/plainpage/`、`support.html`、`privacy.html`；其他语言为 `zh-Hant/`、`en/`、`ja/`、`ko/`、`fr/`、`es/`、`pt-BR/`、`it/` 下的同名三页，共 27 页。
-- 每页有自引用 canonical、九语言双向 hreflang、指向英语同类页面的 x-default，以及保持页面类型的语言切换；无自动跳转。sitemap 列出全部 27 个 canonical URL。
+- 简中保留原 `/plainpage/`、`support.html`、`privacy.html`；其他语言为 `zh-Hant/`、`en/`、`ja/`、`ko/`、`fr/`、`es/`、`pt-BR/`、`it/`、`ru/` 下的同名三页，共 30 页。
+- 每页有自引用 canonical、十语言双向 hreflang、指向英语同类页面的 x-default，以及保持页面类型的语言切换；无自动跳转。sitemap 列出全部 30 个 canonical URL。
 - `pt-BR` 是巴西葡萄牙语，不是葡萄牙变体。网页语言不等于 App 在某个国家/地区可售，本站不声明全球可售。
 
 ```sh
@@ -16,7 +16,7 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/build_site.py --check
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 ```
 
-`--check` 只读检查源内容和已提交产物一致；测试覆盖 27 页链接、语言切换、hreflang/canonical、sitemap、可见 FAQ/schema 一致性、隐私正文及反馈警示覆盖。中文/英文隐私六段正文使用原始 Git 基线 `29a87949461a80ab6096565c39c2a95bb8f6777c` 的空白归一化摘要防漂移；其余语言为翻译自校，自动测试不是母语准确性或法律审查证明。
+`--check` 只读检查源内容和已提交产物一致；测试覆盖 30 页链接、语言切换、hreflang/canonical、sitemap、可见 FAQ/schema 一致性、隐私正文及反馈警示覆盖。中文/英文隐私六段正文使用原始 Git 基线 `29a87949461a80ab6096565c39c2a95bb8f6777c` 的空白归一化摘要防漂移；其余语言为翻译自校，自动测试不是母语准确性或法律审查证明。
 
 ## 事实与边界
 

@@ -1,4 +1,4 @@
-"""Static nine-language checks: python3 -m unittest discover -s tests -v.
+"""Static ten-language checks: python3 -m unittest discover -s tests -v.
 
 These check coverage and source/output consistency, not native-speaker accuracy.
 """
@@ -56,7 +56,7 @@ def load_page(lang, page):
 class SiteTests(unittest.TestCase):
     def test_generated_output_is_current(self):
         files = site.generate()
-        self.assertEqual(len(files), 28)
+        self.assertEqual(len(files), 31)
         for filename, content in files.items():
             with self.subTest(file=filename):
                 self.assertEqual((ROOT / filename).read_text(), content)
@@ -83,10 +83,10 @@ class SiteTests(unittest.TestCase):
                     alternates = [a for a in page.attrs("link") if a.get("rel") == "alternate"]
                     expected = {other: site.BASE + site.route(other, filename) for other in site.LANGUAGES}
                     expected["x-default"] = site.BASE + site.route("en", filename)
-                    self.assertEqual(len(alternates), 10)
+                    self.assertEqual(len(alternates), 11)
                     self.assertEqual({a["hreflang"]: a["href"] for a in alternates}, expected)
                     switches = [a for a in page.attrs("a") if "hreflang" in a]
-                    self.assertEqual(len(switches), 9)
+                    self.assertEqual(len(switches), 10)
                     current_url = site.BASE + site.route(lang, filename)
                     for a in switches:
                         self.assertEqual(a["lang"], a["hreflang"])
@@ -141,7 +141,7 @@ class SiteTests(unittest.TestCase):
         tree = ET.parse(ROOT / "sitemap.xml")
         urls = [n.text for n in tree.findall("{http://www.sitemaps.org/schemas/sitemap/0.9}url/{http://www.sitemaps.org/schemas/sitemap/0.9}loc")]
         expected = [site.BASE + site.route(lang, page) for lang in site.LANGUAGES for page in site.PAGES]
-        self.assertEqual(len(urls), 27)
+        self.assertEqual(len(urls), 30)
         self.assertCountEqual(urls, expected)
         for filename in site.PAGES:
             self.assertTrue((ROOT / filename).is_file())
@@ -172,7 +172,8 @@ class SiteTests(unittest.TestCase):
             "fr": ["ne collecte, ne stocke, n’envoie ni ne vend", "pas de système de comptes", "SDK d’analyse, de publicité ou de suivi", "uniquement sur votre appareil", "ne lit ni ne transmet", "aucune requête réseau", "via l’App Store", "enfants", "date d’entrée en vigueur", "2026-09-24"],
             "es": ["no recopila, almacena, sube ni vende", "No hay un sistema de cuentas", "SDK de análisis, publicidad o seguimiento", "únicamente en tu dispositivo", "no lee ni transmite", "no realiza solicitudes de red", "a través del App Store", "menores", "fecha de entrada en vigor", "2026-09-24"],
             "pt-BR": ["não coleta, armazena, envia nem vende", "Não há sistema de contas", "SDKs de análise, publicidade ou rastreamento", "apenas no seu dispositivo", "não lê nem transmite", "não faz solicitações de rede", "pela App Store", "crianças", "data de vigência", "2026-09-24"],
-            "it": ["non raccoglie, memorizza, carica né vende", "Non esiste un sistema di account", "SDK di analisi, pubblicità o tracciamento", "solo sul dispositivo", "non legge né trasmette", "non effettua richieste di rete", "tramite App Store", "minori", "data di entrata in vigore", "2026-09-24"]
+            "it": ["non raccoglie, memorizza, carica né vende", "Non esiste un sistema di account", "SDK di analisi, pubblicità o tracciamento", "solo sul dispositivo", "non legge né trasmette", "non effettua richieste di rete", "tramite App Store", "minori", "data di entrata in vigore", "2026-09-24"],
+            "ru": ["не собирает, не хранит, не загружает на серверы и не продаёт", "Нет системы учётных записей", "SDK аналитики, рекламы или отслеживания", "только на вашем устройстве", "не читает и не передаёт", "не делает сетевых запросов", "через App Store", "включая детей", "дата вступления в силу", "2026-09-24"]
         }
         for lang, data in LOCALES.items():
             with self.subTest(lang=lang):
