@@ -1,6 +1,74 @@
-<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>素页 Plainpage</title><link rel="stylesheet" href="style.css"></head><body><main>
-<nav><a href="./">素页</a><a href="privacy.html">隐私政策 Privacy</a><a href="support.html">技术支持 Support</a></nav>
-<h1>素页 Plainpage</h1><p class="muted">Safari 去广告 · Safari Ad Blocker for iPhone</p>
-<p>素页用两层方式去掉 Safari 里的广告：约 8.6 万条规则由 Safari 在系统层直接拦截广告与弹窗；规则漏掉的广告，再由本地 AI 模型识别。本地 AI 由 Jev 模型训练，学习了近 5 万个真实网页元素。所有判断都在你的 iPhone 上完成，不上传任何浏览内容。</p>
-<p>Plainpage removes ads in Safari in two layers: about 86,000 rules let Safari block ads and pop-ups at the system level, and an on-device AI model catches ads the rules miss. The on-device AI was trained with the Jev model on nearly 50,000 real web page elements. Everything runs on your iPhone; nothing you browse is uploaded.</p>
-</main></body></html>
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>素页 Plainpage — 免费 iPhone Safari 广告拦截器</title>
+<meta name="description" content="素页 Plainpage 是免费的 iPhone Safari 广告拦截器，支持 iOS 17 及以上。Safari 规则拦截与设备本地模型配合，广告判定不上传网页内容。了解开启方法、适用范围与常见问题。">
+<link rel="canonical" href="https://alexlee2046.github.io/plainpage/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="素页 Plainpage — 免费 iPhone Safari 广告拦截器">
+<meta property="og:description" content="Safari 规则拦截 + 设备本地模型。免费，支持 iPhone（iOS 17 及以上），广告判定不上传网页内容。">
+<meta property="og:url" content="https://alexlee2046.github.io/plainpage/">
+<meta property="og:site_name" content="素页 Plainpage">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://alexlee2046.github.io/plainpage/#app",
+      "name": "素页 Plainpage",
+      "alternateName": "Plainpage",
+      "url": "https://alexlee2046.github.io/plainpage/",
+      "downloadUrl": "https://apps.apple.com/app/id6815329484",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "iOS 17 or later",
+      "description": "素页 Plainpage 是免费的 iPhone Safari 广告拦截器。Safari 规则拦截与设备本地模型配合，广告判定在设备上完成，不上传网页内容。",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD", "url": "https://apps.apple.com/app/id6815329484"}
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://alexlee2046.github.io/plainpage/#faq",
+      "inLanguage": "zh-Hans",
+      "mainEntity": [
+        {"@type": "Question", "name": "素页是什么？", "acceptedAnswer": {"@type": "Answer", "text": "素页 Plainpage 是用于 iPhone Safari 的免费广告拦截器，需要 iOS 17 及以上系统。"}},
+        {"@type": "Question", "name": "素页如何拦截广告？", "acceptedAnswer": {"@type": "Answer", "text": "素页安装两个 Safari 扩展：规则拦截由 Safari 匹配广告规则；AI 过滤用设备本地模型识别并移除规则漏掉的广告元素。"}},
+        {"@type": "Question", "name": "广告判定会上传网页内容吗？", "acceptedAnswer": {"@type": "Answer", "text": "不会。广告判定在设备上完成，本地模型不联网判断，也不上传网页内容。Jev 用于开发阶段的模型训练，不是浏览时调用的在线服务。"}},
+        {"@type": "Question", "name": "如何开启素页？", "acceptedAnswer": {"@type": "Answer", "text": "安装后在 iPhone 设置的 Safari 扩展中开启「素页 规则拦截」和「素页 AI 过滤」，为 AI 过滤允许网站访问，再打开素页 App 同步规则至 Safari。详细步骤见技术支持页。"}},
+        {"@type": "Question", "name": "素页能拦截所有 App 的广告吗？", "acceptedAnswer": {"@type": "Answer", "text": "素页用于 Safari 网页，不是其他 App 内广告的通用拦截器；也不保证每个网页的所有广告都能被移除。"}},
+        {"@type": "Question", "name": "广告仍显示或页面被误删怎么办？", "acceptedAnswer": {"@type": "Answer", "text": "先确认两个扩展已开启、同步规则并刷新网页。若页面被误删，可先在 Safari 的网站菜单中为该网站关闭扩展。反馈方式与注意事项见技术支持页。"}}
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body><main>
+<nav aria-label="主导航"><a href="./" aria-current="page">素页</a><a href="privacy.html">隐私政策 Privacy</a><a href="support.html">技术支持 Support</a></nav>
+<h1>素页 Plainpage</h1>
+<p class="muted">免费 iPhone Safari 广告拦截器 · iOS 17 及以上</p>
+<p>素页 Plainpage 是用于 iPhone Safari 的免费广告拦截器。Safari 规则拦截与设备本地模型配合，帮助移除网页广告和弹窗。广告判定在设备上完成，不上传网页内容。</p>
+<p><a href="https://apps.apple.com/app/id6815329484">在 App Store 下载素页</a> · <a href="support.html">查看开启方法</a></p>
+<section aria-labelledby="how-it-works">
+<h2 id="how-it-works">两层方式拦截 Safari 广告</h2>
+<ul><li><strong>规则拦截：</strong>由 Safari 匹配来自 EasyList、EasyList China 及补充规则的广告规则。</li><li><strong>AI 过滤：</strong>设备本地模型识别并移除规则漏掉的广告元素。Jev 用于开发阶段的模型训练，浏览时不调用在线模型。</li></ul>
+<p>素页用于 Safari 网页，不是其他 App 内广告的通用拦截器，也不保证移除所有广告。更多说明见 <a href="privacy.html">App 隐私政策</a>和 <a href="support.html">技术支持</a>。</p>
+</section>
+<section aria-labelledby="faq">
+<h2 id="faq">常见问题</h2>
+<h3>素页是什么？</h3><p>素页 Plainpage 是用于 iPhone Safari 的免费广告拦截器，需要 iOS 17 及以上系统。</p>
+<h3>素页如何拦截广告？</h3><p>素页安装两个 Safari 扩展：规则拦截由 Safari 匹配广告规则；AI 过滤用设备本地模型识别并移除规则漏掉的广告元素。</p>
+<h3>广告判定会上传网页内容吗？</h3><p>不会。广告判定在设备上完成，本地模型不联网判断，也不上传网页内容。Jev 用于开发阶段的模型训练，不是浏览时调用的在线服务。</p>
+<h3>如何开启素页？</h3><p>安装后在 iPhone 设置的 Safari 扩展中开启「素页 规则拦截」和「素页 AI 过滤」，为 AI 过滤允许网站访问，再打开素页 App 同步规则至 Safari。详细步骤见<a href="support.html">技术支持页</a>。</p>
+<h3>素页能拦截所有 App 的广告吗？</h3><p>素页用于 Safari 网页，不是其他 App 内广告的通用拦截器；也不保证每个网页的所有广告都能被移除。</p>
+<h3>广告仍显示或页面被误删怎么办？</h3><p>先确认两个扩展已开启、同步规则并刷新网页。若页面被误删，可先在 Safari 的网站菜单中为该网站关闭扩展。反馈方式与注意事项见<a href="support.html">技术支持页</a>。</p>
+</section>
+<section lang="en" aria-labelledby="english-summary">
+<h2 id="english-summary">Plainpage: Safari ad blocker for iPhone</h2>
+<p>Plainpage is a free Safari ad blocker for iPhone, requiring iOS 17 or later. Safari content-blocking rules and an on-device model work together to remove web ads. Ad detection runs on your device without uploading web page content. Jev is used during model training in development, not as an online service while you browse.</p>
+<p>Plainpage works on Safari web pages, not as a universal ad blocker inside other apps. It does not guarantee removal of every ad. See <a href="support.html" hreflang="zh-Hans">Support (中文 / English)</a> for setup and troubleshooting, or the <a href="privacy.html">Privacy Policy (中文 / English)</a>.</p>
+</section>
+</main></body>
+</html>
