@@ -1,0 +1,992 @@
+{
+  "zh-Hans": {
+    "name": "素页 Plainpage",
+    "nav": [
+      "首页",
+      "技术支持",
+      "隐私政策"
+    ],
+    "languageLabel": "语言",
+    "homeTitle": "素页 Plainpage — 免费 iPhone Safari 广告拦截器",
+    "homeDescription": "素页 Plainpage 是用于 iPhone Safari 的免费广告拦截器，需要 iOS 17 及以上系统。Safari 规则拦截与设备本地模型配合，广告判定在设备上完成，不上传网页内容。",
+    "tagline": "免费 · iPhone · iOS 17 及以上 · Safari",
+    "download": "在 App Store 下载",
+    "setupLink": "查看开启方法",
+    "methodTitle": "两层方式拦截 Safari 广告",
+    "methods": [
+      "规则拦截：由 Safari 匹配来自 EasyList、EasyList China 及补充规则的广告规则。",
+      "AI 过滤：设备本地模型识别并移除规则漏掉的广告元素。Jev 用于开发阶段的模型训练，浏览时不调用在线模型。"
+    ],
+    "limits": "素页用于 Safari 网页，不是其他 App 内广告的通用拦截器，也不保证移除所有广告。",
+    "faqTitle": "常见问题",
+    "faq": [
+      [
+        "素页是什么？",
+        "素页 Plainpage 是用于 iPhone Safari 的免费广告拦截器，需要 iOS 17 及以上系统。"
+      ],
+      [
+        "素页如何拦截广告？",
+        "素页安装两个 Safari 扩展：规则拦截由 Safari 匹配广告规则；AI 过滤用设备本地模型识别并移除规则漏掉的广告元素。"
+      ],
+      [
+        "广告判定会上传网页内容吗？",
+        "不会。广告判定在设备上完成，本地模型不联网判断，也不上传网页内容。Jev 用于开发阶段的模型训练，不是浏览时调用的在线服务。"
+      ],
+      [
+        "如何开启素页？",
+        "安装后在 iPhone 设置的 Safari 扩展中开启「素页 规则拦截」和「素页 AI 过滤」，为 AI 过滤允许网站访问，再打开素页 App 立即同步规则至 Safari。详细步骤见技术支持页。"
+      ],
+      [
+        "素页能拦截所有 App 的广告吗？",
+        "素页用于 Safari 网页，不是其他 App 内广告的通用拦截器；也不保证每个网页的所有广告都能被移除。"
+      ],
+      [
+        "广告仍显示或页面被误删怎么办？",
+        "先确认两个扩展已开启、同步规则并刷新网页。若页面被误删，可先在 Safari 的网站菜单中为该网站关闭扩展。反馈方式与注意事项见技术支持页。"
+      ]
+    ],
+    "supportTitle": "素页 Plainpage 技术支持",
+    "supportDescription": "素页的 Safari 双扩展开启步骤、规则同步、广告仍显示与误删处理方法，以及公开反馈前的隐私注意事项。",
+    "setupTitle": "开启 Safari 双扩展",
+    "steps": [
+      "在 iPhone 设置 → App → Safari → 扩展中开启「素页 规则拦截」。在部分 iOS 版本中，Safari 直接位于设置首页。",
+      "开启「素页 AI 过滤」，在网站权限中选择「所有网站 → 允许」。",
+      "打开素页 App，点击「立即同步规则至 Safari」，然后在 Safari 中打开网页。"
+    ],
+    "supportFaqTitle": "排查常见问题",
+    "troubleshooting": [
+      [
+        "广告仍然显示？",
+        "确认两个扩展都已开启；在 App 中点击「立即同步规则至 Safari」，然后刷新网页。部分网页需要重新打开标签页。"
+      ],
+      [
+        "页面内容被误删？",
+        "AI 过滤只对高置信度的广告判断动手，但仍可能误删。可先在 Safari 地址栏的网站菜单中为该网站关闭扩展。可提交不含敏感信息的问题说明供我们排查；不保证在特定版本修复。"
+      ]
+    ],
+    "feedbackTitle": "反馈与联系",
+    "feedbackLink": "在 GitHub Issues 提交问题",
+    "feedbackWarning": "说明问题及 iOS 版本；如需网址或截图，只提供可公开的页面，并先移除个人信息。GitHub Issues 是公开的，请勿提交登录态页面、浏览记录、账号、订单、密码或其他敏感信息。",
+    "privacyTitle": "素页 Plainpage 隐私政策",
+    "privacyDescription": "素页 iOS App 及 Safari 扩展的隐私政策：设备本地广告判定、网站访问权限与规则和模型更新说明。",
+    "effectiveDate": "生效日期：2026-09-24",
+    "privacyScope": "适用于 iOS App「素页 Plainpage」及其 Safari 扩展。",
+    "privacySections": [
+      [
+        "我们不收集任何数据",
+        [
+          "素页不收集、不存储、不上传、不出售任何个人信息或使用数据。App 没有账号系统，不含任何统计、广告或追踪 SDK。"
+        ]
+      ],
+      [
+        "广告判断全部在设备上完成",
+        [
+          "「素页 规则拦截」把拦截规则交给 Safari，由 Safari 在系统内部匹配，素页看不到你访问的网址。「素页 AI 过滤」在网页内运行本地模型判断页面元素是否为广告，判断过程和结果只存在于你的设备上，不会发送到任何服务器。"
+        ]
+      ],
+      [
+        "网页扩展权限",
+        [
+          "AI 过滤需要你在 Safari 设置中允许其访问网站，这是在页面内运行本地模型、移除广告元素所必需的。扩展不会读取或传输表单内容、密码、Cookie 或浏览记录。"
+        ]
+      ],
+      [
+        "联网情况",
+        [
+          "素页本身不发起网络请求。更新拦截规则和模型随 App 版本通过 App Store 下发。"
+        ]
+      ],
+      [
+        "儿童隐私",
+        [
+          "素页不收集任何人的数据，包括儿童。"
+        ]
+      ],
+      [
+        "变更与联系",
+        [
+          "本政策如有变更，会更新本页并修改生效日期。问题请见技术支持。"
+        ]
+      ]
+    ],
+    "feedbackNotice": "GitHub Issues 是你主动提交的公开网页反馈渠道，不是 App 的数据收集功能；提交的内容会发送到 GitHub 并公开显示。"
+  },
+  "zh-Hant": {
+    "name": "素頁 Plainpage",
+    "nav": [
+      "首頁",
+      "技術支援",
+      "隱私權政策"
+    ],
+    "languageLabel": "語言",
+    "homeTitle": "素頁 Plainpage — 免費 iPhone Safari 廣告攔截器",
+    "homeDescription": "素頁 Plainpage 是用於 iPhone Safari 的免費廣告攔截器，需要 iOS 17 或以上版本。Safari 規則攔截搭配裝置本機模型，廣告判定在裝置上完成，不上傳網頁內容。",
+    "tagline": "免費 · iPhone · iOS 17 或以上版本 · Safari",
+    "download": "在 App Store 下載",
+    "setupLink": "查看啟用方法",
+    "methodTitle": "兩層方式攔截 Safari 廣告",
+    "methods": [
+      "規則攔截：由 Safari 比對來自 EasyList、EasyList China 及補充規則的廣告規則。",
+      "AI 過濾：裝置本機模型辨識並移除規則漏掉的廣告元素。Jev 用於開發階段的模型訓練，瀏覽時不呼叫線上模型。"
+    ],
+    "limits": "素頁用於 Safari 網頁，不是其他 App 內廣告的通用攔截器，也不保證移除所有廣告。",
+    "faqTitle": "常見問題",
+    "faq": [
+      [
+        "素頁是什麼？",
+        "素頁 Plainpage 是用於 iPhone Safari 的免費廣告攔截器，需要 iOS 17 或以上版本。"
+      ],
+      [
+        "素頁如何攔截廣告？",
+        "素頁安裝兩個 Safari 擴充功能：規則攔截由 Safari 比對廣告規則；AI 過濾使用裝置本機模型辨識並移除規則漏掉的廣告元素。"
+      ],
+      [
+        "廣告判定會上傳網頁內容嗎？",
+        "不會。廣告判定在裝置上完成，本機模型不透過網路判定，也不上傳網頁內容。Jev 用於開發階段的模型訓練，不是瀏覽時呼叫的線上服務。"
+      ],
+      [
+        "如何啟用素頁？",
+        "安裝後，在 iPhone 設定的 Safari 擴充功能中啟用「素頁 規則攔截」及「素頁 AI 過濾」，允許 AI 過濾存取網站，再開啟素頁 App 將規則同步至 Safari。詳細步驟請見技術支援頁。"
+      ],
+      [
+        "素頁能攔截所有 App 的廣告嗎？",
+        "素頁用於 Safari 網頁，不是其他 App 內廣告的通用攔截器；也不保證每個網頁的所有廣告都能被移除。"
+      ],
+      [
+        "廣告仍顯示或網頁內容被誤刪怎麼辦？",
+        "先確認兩個擴充功能已啟用、同步規則並重新整理網頁。若網頁內容被誤刪，可先在 Safari 的網站選單中為該網站關閉擴充功能。回報方式及注意事項請見技術支援頁。"
+      ]
+    ],
+    "supportTitle": "素頁 Plainpage 技術支援",
+    "supportDescription": "素頁的 Safari 雙擴充功能啟用步驟、規則同步、廣告仍顯示及誤刪處理方式，以及公開回報前的隱私注意事項。",
+    "setupTitle": "啟用 Safari 雙擴充功能",
+    "steps": [
+      "在 iPhone 設定 → App → Safari → 擴充功能中啟用「素頁 規則攔截」。在部分 iOS 版本中，Safari 直接位於設定首頁。",
+      "啟用「素頁 AI 過濾」，在網站權限中選擇「所有網站 → 允許」。",
+      "開啟素頁 App，點選「立即同步規則至 Safari」，然後在 Safari 開啟網頁。"
+    ],
+    "supportFaqTitle": "排查常見問題",
+    "troubleshooting": [
+      [
+        "廣告仍然顯示？",
+        "確認兩個擴充功能均已啟用；在 App 中點選「立即同步規則至 Safari」，然後重新整理網頁。部分網頁需要重新開啟分頁。"
+      ],
+      [
+        "網頁內容被誤刪？",
+        "AI 過濾只處理高信心度的廣告判定，但仍可能誤刪。可先在 Safari 網址列的網站選單中為該網站關閉擴充功能。可提交不含敏感資訊的問題說明供我們排查；不保證在特定版本修正。"
+      ]
+    ],
+    "feedbackTitle": "回報與聯絡",
+    "feedbackLink": "在 GitHub Issues 提交問題",
+    "feedbackWarning": "說明問題及 iOS 版本；若需要網址或截圖，請只提供可公開的網頁，並先移除個人資訊。GitHub Issues 是公開的，請勿提交已登入的網頁、瀏覽紀錄、帳號、訂單、密碼或其他敏感資訊。",
+    "privacyTitle": "素頁 Plainpage 隱私權政策",
+    "privacyDescription": "素頁 iOS App 及 Safari 擴充功能的隱私權政策：裝置本機廣告判定、網站存取權限及規則與模型更新說明。",
+    "effectiveDate": "生效日期：2026-09-24",
+    "privacyScope": "適用於 iOS App「素頁 Plainpage」及其 Safari 擴充功能。",
+    "privacySections": [
+      [
+        "我們不收集任何資料",
+        [
+          "素頁不收集、不儲存、不上傳、不出售任何個人資訊或使用資料。App 沒有帳號系統，不含任何統計、廣告或追蹤 SDK。"
+        ]
+      ],
+      [
+        "廣告判定全部在裝置上完成",
+        [
+          "「素頁 規則攔截」將攔截規則交給 Safari，由 Safari 在系統內部比對，素頁看不到你造訪的網址。「素頁 AI 過濾」在網頁內執行本機模型，判定頁面元素是否為廣告，判定過程及結果只存在於你的裝置上，不會傳送到任何伺服器。"
+        ]
+      ],
+      [
+        "網頁擴充功能權限",
+        [
+          "AI 過濾需要你在 Safari 設定中允許其存取網站，這是在頁面內執行本機模型、移除廣告元素所必需的。擴充功能不會讀取或傳輸表單內容、密碼、Cookie 或瀏覽紀錄。"
+        ]
+      ],
+      [
+        "網路連線",
+        [
+          "素頁本身不發起網路請求。攔截規則與模型的更新隨 App 版本透過 App Store 提供。"
+        ]
+      ],
+      [
+        "兒童隱私",
+        [
+          "素頁不收集任何人的資料，包括兒童。"
+        ]
+      ],
+      [
+        "變更與聯絡",
+        [
+          "本政策如有變更，會更新本頁並修改生效日期。如有問題，請見技術支援。"
+        ]
+      ]
+    ],
+    "feedbackNotice": "GitHub Issues 是你主動提交的公開網頁回報管道，不是 App 的資料收集功能；提交的內容會傳送到 GitHub 並公開顯示。"
+  },
+  "en": {
+    "name": "Plainpage",
+    "nav": [
+      "Home",
+      "Support",
+      "Privacy Policy"
+    ],
+    "languageLabel": "Language",
+    "homeTitle": "Plainpage — Free Safari ad blocker for iPhone",
+    "homeDescription": "Plainpage is a free Safari ad blocker for iPhone, requiring iOS 17 or later. Safari content-blocking rules and an on-device model work together. Ad detection runs on your device without uploading web page content.",
+    "tagline": "Free · iPhone · iOS 17 or later · Safari",
+    "download": "Download on the App Store",
+    "setupLink": "See setup instructions",
+    "methodTitle": "Two layers of Safari ad blocking",
+    "methods": [
+      "Rule blocking: Safari matches ad rules from EasyList, EasyList China, and supplementary rules.",
+      "AI filtering: an on-device model identifies and removes ad elements missed by the rules. Jev is used for model training during development, not as an online model while you browse."
+    ],
+    "limits": "Plainpage works on Safari web pages, not as a universal ad blocker inside other apps. It does not guarantee removal of every ad.",
+    "faqTitle": "Frequently asked questions",
+    "faq": [
+      [
+        "What is Plainpage?",
+        "Plainpage is a free Safari ad blocker for iPhone. It requires iOS 17 or later."
+      ],
+      [
+        "How does Plainpage block ads?",
+        "Plainpage installs two Safari extensions: rule blocking lets Safari match ad rules; AI filtering uses an on-device model to identify and remove ad elements missed by the rules."
+      ],
+      [
+        "Does ad detection upload web page content?",
+        "No. Ad detection runs on your device. The local model makes no network queries for detection and does not upload web page content. Jev is used for model training during development, not as an online service while you browse."
+      ],
+      [
+        "How do I enable Plainpage?",
+        "After installing, enable “Plainpage Blocker” and “Plainpage AI Filter” in the Safari extensions section of iPhone Settings. Allow website access for AI Filter, then open the Plainpage app and sync rules to Safari. See the Support page for detailed steps."
+      ],
+      [
+        "Does Plainpage block ads in every app?",
+        "Plainpage works on Safari web pages, not as a universal ad blocker inside other apps. It does not guarantee removal of every ad on every page."
+      ],
+      [
+        "What if ads remain or page content is removed by mistake?",
+        "Check that both extensions are enabled, sync the rules, and reload the page. If content is removed by mistake, first disable the extensions for that site in Safari’s website menu. See the Support page for reporting options and precautions."
+      ]
+    ],
+    "supportTitle": "Plainpage Support",
+    "supportDescription": "Enable both Plainpage Safari extensions, sync rules, troubleshoot remaining ads or mistaken removals, and learn what not to share in a public issue.",
+    "setupTitle": "Enable both Safari extensions",
+    "steps": [
+      "In iPhone Settings → Apps → Safari → Extensions, turn on “Plainpage Blocker”. On some iOS versions, Safari is directly on the main Settings screen.",
+      "Turn on “Plainpage AI Filter” and set website access to “All Websites → Allow”.",
+      "Open the Plainpage app, tap “Sync rules to Safari”, then open a web page in Safari."
+    ],
+    "supportFaqTitle": "Troubleshooting",
+    "troubleshooting": [
+      [
+        "Ads still showing?",
+        "Check that both extensions are enabled, tap “Sync rules to Safari” in the app, and reload the page. Some pages need the tab to be reopened."
+      ],
+      [
+        "Page content removed by mistake?",
+        "AI filtering acts only on high-confidence ad detections, but mistakes are still possible. First disable the extensions for that site using the website menu in Safari’s address bar. You can report the issue without sensitive information so we can investigate; a fix in a specific release is not guaranteed."
+      ]
+    ],
+    "feedbackTitle": "Feedback and contact",
+    "feedbackLink": "Report an issue on GitHub Issues",
+    "feedbackWarning": "Describe the issue and your iOS version. If you include an address or screenshot, use only public pages and remove personal information first. GitHub Issues are public: do not share signed-in pages, browsing history, accounts, orders, passwords, or other sensitive information.",
+    "privacyTitle": "Plainpage Privacy Policy",
+    "privacyDescription": "Privacy policy for the Plainpage iOS app and Safari extensions: on-device ad detection, website access, and rule and model updates.",
+    "effectiveDate": "Effective: 2026-09-24",
+    "privacyScope": "For the iOS app \"Plainpage\" and its Safari extensions.",
+    "privacySections": [
+      [
+        "We collect no data",
+        [
+          "Plainpage does not collect, store, upload, or sell any personal information or usage data. There are no accounts and no analytics, advertising, or tracking SDKs."
+        ]
+      ],
+      [
+        "Ad detection happens on your device",
+        [
+          "\"Plainpage Blocker\" hands its rules to Safari, which matches them internally; Plainpage never sees the addresses you visit. \"Plainpage AI Filter\" runs an on-device model inside web pages to decide whether page elements are ads. The process and its results stay on your device and are never sent to any server."
+        ]
+      ],
+      [
+        "Web extension permission",
+        [
+          "The AI Filter needs your permission in Safari settings to access websites, which is required to run the on-device model in the page and remove ad elements. It does not read or transmit form contents, passwords, cookies, or browsing history."
+        ]
+      ],
+      [
+        "Network",
+        [
+          "Plainpage itself makes no network requests. Rule and model updates ship with app updates through the App Store."
+        ]
+      ],
+      [
+        "Children",
+        [
+          "Plainpage collects no data from anyone, including children."
+        ]
+      ],
+      [
+        "Changes and contact",
+        [
+          "If this policy changes, this page and its effective date will be updated. For questions see Support."
+        ]
+      ]
+    ],
+    "feedbackNotice": "GitHub Issues is a public web feedback channel you choose to use, not an app data-collection feature. Submitted content is sent to GitHub and displayed publicly."
+  },
+  "ja": {
+    "name": "Plainpage",
+    "nav": [
+      "ホーム",
+      "サポート",
+      "プライバシーポリシー"
+    ],
+    "languageLabel": "言語",
+    "homeTitle": "Plainpage — iPhone Safari 向け無料広告ブロッカー",
+    "homeDescription": "Plainpage は iPhone の Safari 向け無料広告ブロッカーです。iOS 17 以降が必要です。Safari のブロックルールと端末内のモデルを組み合わせ、広告の判定を端末上で行います。ウェブページの内容はアップロードしません。",
+    "tagline": "無料 · iPhone · iOS 17 以降 · Safari",
+    "download": "App Store でダウンロード",
+    "setupLink": "設定方法を見る",
+    "methodTitle": "Safari の広告を二段階でブロック",
+    "methods": [
+      "ルールによるブロック：Safari が EasyList、EasyList China および補足ルールの広告ルールを照合します。",
+      "AI フィルタ：端末内のモデルが、ルールで見逃された広告要素を識別して取り除きます。Jev は開発段階のモデル学習に使用され、閲覧中にオンラインモデルを呼び出すことはありません。"
+    ],
+    "limits": "Plainpage は Safari のウェブページ向けです。他のアプリ内の広告をすべてブロックするものではなく、すべての広告の除去を保証するものでもありません。",
+    "faqTitle": "よくある質問",
+    "faq": [
+      [
+        "Plainpage とは何ですか？",
+        "Plainpage は iPhone の Safari 向け無料広告ブロッカーです。iOS 17 以降が必要です。"
+      ],
+      [
+        "どのように広告をブロックしますか？",
+        "Plainpage は二つの Safari 拡張機能をインストールします。ルールによるブロックでは Safari が広告ルールを照合し、AI フィルタでは端末内のモデルがルールで見逃された広告要素を識別して取り除きます。"
+      ],
+      [
+        "広告の判定時にウェブページの内容をアップロードしますか？",
+        "いいえ。広告の判定は端末上で行います。端末内のモデルは判定のためにネットワークへ問い合わせることはなく、ウェブページの内容もアップロードしません。Jev は開発段階のモデル学習に使用され、閲覧中に呼び出すオンラインサービスではありません。"
+      ],
+      [
+        "Plainpage を有効にするには？",
+        "インストール後、iPhone の設定の Safari 拡張機能で「Plainpage ルールブロック」と「Plainpage AI フィルタ」を有効にします。AI フィルタにウェブサイトへのアクセスを許可し、Plainpage アプリを開いて Safari にルールを同期してください。詳しい手順はサポートページをご覧ください。"
+      ],
+      [
+        "すべてのアプリの広告をブロックできますか？",
+        "Plainpage は Safari のウェブページ向けで、他のアプリ内の広告をすべてブロックするものではありません。また、すべてのページであらゆる広告を取り除けるとは限りません。"
+      ],
+      [
+        "広告が残る、またはページの内容が誤って削除される場合は？",
+        "両方の拡張機能が有効か確認し、ルールを同期してページを再読み込みしてください。内容が誤って削除される場合は、まず Safari のウェブサイトメニューでそのサイトの拡張機能を無効にしてください。報告方法と注意事項はサポートページをご覧ください。"
+      ]
+    ],
+    "supportTitle": "Plainpage サポート",
+    "supportDescription": "Safari の二つの拡張機能の設定、ルール同期、広告が残る場合や誤削除の対処方法、公開の報告時に守るべきプライバシー上の注意事項。",
+    "setupTitle": "二つの Safari 拡張機能を有効にする",
+    "steps": [
+      "iPhone の設定 → アプリ → Safari → 機能拡張で「Plainpage ルールブロック」を有効にします。iOS のバージョンによっては、Safari が設定のトップ画面に表示されます。",
+      "「Plainpage AI フィルタ」を有効にし、ウェブサイトへのアクセスで「すべての Web サイト → 許可」を選択します。",
+      "Plainpage アプリを開き、「Safari にルールを同期」をタップしてから Safari でウェブページを開きます。"
+    ],
+    "supportFaqTitle": "トラブルシューティング",
+    "troubleshooting": [
+      [
+        "広告がまだ表示されますか？",
+        "両方の拡張機能が有効か確認し、アプリで「Safari にルールを同期」をタップしてページを再読み込みしてください。ページによってはタブを開き直す必要があります。"
+      ],
+      [
+        "ページの内容が誤って削除されますか？",
+        "AI フィルタは確信度の高い広告判定のみを処理しますが、誤削除の可能性はあります。まず Safari のアドレスバーにあるウェブサイトメニューで、そのサイトの拡張機能を無効にしてください。調査のため、機密情報を含まない説明を報告できます。特定のバージョンでの修正を保証するものではありません。"
+      ]
+    ],
+    "feedbackTitle": "フィードバックとお問い合わせ",
+    "feedbackLink": "GitHub Issues で問題を報告",
+    "feedbackWarning": "問題の説明と iOS のバージョンを記載してください。URL やスクリーンショットを添付する場合は、公開可能なページのみを使用し、事前に個人情報を削除してください。GitHub Issues は公開されます。ログイン済みのページ、閲覧履歴、アカウント、注文、パスワード、その他の機密情報を投稿しないでください。",
+    "privacyTitle": "Plainpage プライバシーポリシー",
+    "privacyDescription": "Plainpage iOS アプリと Safari 拡張機能のプライバシーポリシー：端末内の広告判定、ウェブサイトへのアクセス、ルールとモデルの更新。",
+    "effectiveDate": "発効日：2026-09-24",
+    "privacyScope": "本ポリシーは iOS アプリ「Plainpage」とその Safari 拡張機能に適用されます。",
+    "privacySections": [
+      [
+        "データを一切収集しません",
+        [
+          "Plainpage は個人情報や利用データを収集、保存、アップロード、販売しません。アカウントシステムはなく、解析、広告、トラッキングの SDK も含まれていません。"
+        ]
+      ],
+      [
+        "広告の判定はすべて端末上で行います",
+        [
+          "「Plainpage ルールブロック」はブロックルールを Safari に渡し、Safari がシステム内部で照合します。Plainpage はアクセスした URL を見ることができません。「Plainpage AI フィルタ」はウェブページ内で端末内のモデルを実行し、ページの要素が広告かどうかを判定します。判定の過程と結果は端末上にのみ存在し、どのサーバーにも送信されません。"
+        ]
+      ],
+      [
+        "ウェブ拡張機能の権限",
+        [
+          "AI フィルタには、Safari の設定でウェブサイトへのアクセスを許可する必要があります。これはページ内で端末内のモデルを実行し、広告要素を取り除くために必要です。拡張機能はフォームの内容、パスワード、Cookie、閲覧履歴を読み取ったり送信したりしません。"
+        ]
+      ],
+      [
+        "ネットワーク",
+        [
+          "Plainpage 自体はネットワークリクエストを行いません。ブロックルールとモデルの更新は、アプリのバージョン更新とともに App Store を通じて配信されます。"
+        ]
+      ],
+      [
+        "子どものプライバシー",
+        [
+          "Plainpage は子どもを含め、誰のデータも収集しません。"
+        ]
+      ],
+      [
+        "変更とお問い合わせ",
+        [
+          "本ポリシーを変更する場合は、このページと発効日を更新します。ご質問はサポートをご覧ください。"
+        ]
+      ]
+    ],
+    "feedbackNotice": "GitHub Issues は利用者が自分で投稿する公開のウェブ窓口であり、アプリのデータ収集機能ではありません。投稿した内容は GitHub に送信され、公開されます。"
+  },
+  "ko": {
+    "name": "Plainpage",
+    "nav": [
+      "홈",
+      "지원",
+      "개인정보 처리방침"
+    ],
+    "languageLabel": "언어",
+    "homeTitle": "Plainpage — iPhone Safari용 무료 광고 차단기",
+    "homeDescription": "Plainpage는 iPhone Safari용 무료 광고 차단기이며 iOS 17 이상이 필요합니다. Safari 차단 규칙과 기기 내 모델을 함께 사용합니다. 광고 판별은 기기에서 이루어지며 웹페이지 콘텐츠를 업로드하지 않습니다.",
+    "tagline": "무료 · iPhone · iOS 17 이상 · Safari",
+    "download": "App Store에서 다운로드",
+    "setupLink": "설정 방법 보기",
+    "methodTitle": "두 단계로 Safari 광고 차단",
+    "methods": [
+      "규칙 차단: Safari가 EasyList, EasyList China 및 보충 규칙의 광고 규칙을 대조합니다.",
+      "AI 필터: 기기 내 모델이 규칙에서 놓친 광고 요소를 식별하고 제거합니다. Jev는 개발 단계의 모델 학습에 사용되며, 웹 탐색 중 온라인 모델을 호출하지 않습니다."
+    ],
+    "limits": "Plainpage는 Safari 웹페이지용이며 다른 앱 내부의 광고를 모두 차단하는 도구가 아닙니다. 모든 광고의 제거를 보장하지 않습니다.",
+    "faqTitle": "자주 묻는 질문",
+    "faq": [
+      [
+        "Plainpage는 무엇인가요?",
+        "Plainpage는 iPhone Safari용 무료 광고 차단기이며 iOS 17 이상이 필요합니다."
+      ],
+      [
+        "광고를 어떻게 차단하나요?",
+        "Plainpage는 두 개의 Safari 확장 프로그램을 설치합니다. 규칙 차단에서는 Safari가 광고 규칙을 대조하고, AI 필터에서는 기기 내 모델이 규칙에서 놓친 광고 요소를 식별하고 제거합니다."
+      ],
+      [
+        "광고 판별 시 웹페이지 콘텐츠를 업로드하나요?",
+        "아니요. 광고 판별은 기기에서 이루어집니다. 기기 내 모델은 판별을 위해 네트워크에 질의하지 않으며 웹페이지 콘텐츠를 업로드하지 않습니다. Jev는 개발 단계의 모델 학습에 사용되며, 웹 탐색 중 호출하는 온라인 서비스가 아닙니다."
+      ],
+      [
+        "Plainpage를 어떻게 활성화하나요?",
+        "설치 후 iPhone 설정의 Safari 확장 프로그램에서 “Plainpage 규칙 차단”과 “Plainpage AI 필터”를 활성화하세요. AI 필터의 웹사이트 접근을 허용한 뒤 Plainpage 앱을 열어 Safari에 규칙 동기화하세요. 자세한 단계는 지원 페이지를 참고하세요."
+      ],
+      [
+        "모든 앱의 광고를 차단하나요?",
+        "Plainpage는 Safari 웹페이지용이며 다른 앱 내부의 광고를 모두 차단하는 도구가 아닙니다. 모든 페이지의 모든 광고를 제거한다고 보장하지 않습니다."
+      ],
+      [
+        "광고가 남아 있거나 페이지 콘텐츠가 잘못 삭제되면 어떻게 하나요?",
+        "두 확장 프로그램이 활성화되어 있는지 확인하고 규칙을 동기화한 뒤 페이지를 새로 고침하세요. 콘텐츠가 잘못 삭제되면 먼저 Safari 웹사이트 메뉴에서 해당 사이트의 확장 프로그램을 끄세요. 신고 방법과 주의 사항은 지원 페이지를 참고하세요."
+      ]
+    ],
+    "supportTitle": "Plainpage 지원",
+    "supportDescription": "Safari의 두 확장 프로그램 설정, 규칙 동기화, 남아 있는 광고나 잘못된 삭제의 해결 방법, 공개 신고 전 개인정보 주의 사항을 안내합니다.",
+    "setupTitle": "두 Safari 확장 프로그램 활성화",
+    "steps": [
+      "iPhone 설정 → 앱 → Safari → 확장 프로그램에서 “Plainpage 규칙 차단”을 켜세요. 일부 iOS 버전에서는 Safari가 설정 첫 화면에 있습니다.",
+      "“Plainpage AI 필터”를 켜고 웹사이트 접근 권한을 “모든 웹사이트 → 허용”으로 설정하세요.",
+      "Plainpage 앱을 열어 “Safari에 규칙 동기화”를 누른 뒤 Safari에서 웹페이지를 여세요."
+    ],
+    "supportFaqTitle": "문제 해결",
+    "troubleshooting": [
+      [
+        "광고가 계속 표시되나요?",
+        "두 확장 프로그램이 모두 활성화되어 있는지 확인하고 앱에서 “Safari에 규칙 동기화”를 누른 뒤 페이지를 새로 고침하세요. 일부 페이지는 탭을 다시 열어야 합니다."
+      ],
+      [
+        "페이지 콘텐츠가 잘못 삭제되었나요?",
+        "AI 필터는 신뢰도가 높은 광고 판별에만 작동하지만 잘못 삭제할 가능성은 있습니다. 먼저 Safari 주소 표시줄의 웹사이트 메뉴에서 해당 사이트의 확장 프로그램을 끄세요. 조사를 위해 민감한 정보를 포함하지 않은 문제 설명을 제출할 수 있습니다. 특정 버전에서의 수정을 보장하지 않습니다."
+      ]
+    ],
+    "feedbackTitle": "피드백 및 문의",
+    "feedbackLink": "GitHub Issues에 문제 제출",
+    "feedbackWarning": "문제와 iOS 버전을 설명해 주세요. 주소나 스크린샷이 필요하면 공개 가능한 페이지만 사용하고 개인정보를 먼저 제거하세요. GitHub Issues는 공개됩니다. 로그인된 페이지, 방문 기록, 계정, 주문, 비밀번호 또는 기타 민감한 정보를 게시하지 마세요.",
+    "privacyTitle": "Plainpage 개인정보 처리방침",
+    "privacyDescription": "Plainpage iOS 앱 및 Safari 확장 프로그램의 개인정보 처리방침: 기기 내 광고 판별, 웹사이트 접근, 규칙 및 모델 업데이트에 관한 안내.",
+    "effectiveDate": "시행일: 2026-09-24",
+    "privacyScope": "이 방침은 iOS 앱 “Plainpage”와 해당 Safari 확장 프로그램에 적용됩니다.",
+    "privacySections": [
+      [
+        "어떠한 데이터도 수집하지 않습니다",
+        [
+          "Plainpage는 개인정보나 사용 데이터를 수집, 저장, 업로드 또는 판매하지 않습니다. 계정 시스템이 없으며 분석, 광고 또는 추적 SDK를 포함하지 않습니다."
+        ]
+      ],
+      [
+        "광고 판별은 모두 기기에서 이루어집니다",
+        [
+          "“Plainpage 규칙 차단”은 차단 규칙을 Safari에 전달하고 Safari가 시스템 내부에서 대조합니다. Plainpage는 사용자가 방문한 주소를 볼 수 없습니다. “Plainpage AI 필터”는 웹페이지 안에서 기기 내 모델을 실행하여 페이지 요소가 광고인지 판별합니다. 판별 과정과 결과는 사용자의 기기에만 존재하며 어떠한 서버에도 전송되지 않습니다."
+        ]
+      ],
+      [
+        "웹 확장 프로그램 권한",
+        [
+          "AI 필터를 사용하려면 Safari 설정에서 웹사이트 접근을 허용해야 합니다. 이는 페이지 안에서 기기 내 모델을 실행하고 광고 요소를 제거하는 데 필요합니다. 확장 프로그램은 양식 내용, 비밀번호, Cookie 또는 방문 기록을 읽거나 전송하지 않습니다."
+        ]
+      ],
+      [
+        "네트워크",
+        [
+          "Plainpage 자체는 네트워크 요청을 하지 않습니다. 차단 규칙 및 모델 업데이트는 앱 버전 업데이트와 함께 App Store를 통해 배포됩니다."
+        ]
+      ],
+      [
+        "아동 개인정보",
+        [
+          "Plainpage는 아동을 포함하여 누구의 데이터도 수집하지 않습니다."
+        ]
+      ],
+      [
+        "변경 및 문의",
+        [
+          "이 방침이 변경되면 이 페이지와 시행일을 업데이트합니다. 질문은 지원 페이지를 참고하세요."
+        ]
+      ]
+    ],
+    "feedbackNotice": "GitHub Issues는 사용자가 직접 이용하는 공개 웹 피드백 창구이며 앱의 데이터 수집 기능이 아닙니다. 제출한 내용은 GitHub로 전송되어 공개됩니다."
+  },
+  "fr": {
+    "name": "Plainpage",
+    "nav": [
+      "Accueil",
+      "Assistance",
+      "Politique de confidentialité"
+    ],
+    "languageLabel": "Langue",
+    "homeTitle": "Plainpage — Bloqueur de publicités gratuit pour Safari sur iPhone",
+    "homeDescription": "Plainpage est un bloqueur de publicités gratuit pour Safari sur iPhone, compatible avec iOS 17 ou version ultérieure. Il associe les règles de blocage de Safari à un modèle exécuté sur l’appareil. La détection des publicités se fait sur votre appareil, sans envoyer le contenu des pages web.",
+    "tagline": "Gratuit · iPhone · iOS 17 ou version ultérieure · Safari",
+    "download": "Télécharger sur l’App Store",
+    "setupLink": "Voir les instructions de configuration",
+    "methodTitle": "Deux niveaux de blocage dans Safari",
+    "methods": [
+      "Blocage par règles : Safari compare les éléments aux règles publicitaires d’EasyList, d’EasyList China et de listes complémentaires.",
+      "Filtrage par IA : un modèle exécuté sur l’appareil identifie et supprime les éléments publicitaires non bloqués par les règles. Jev sert à entraîner le modèle pendant le développement ; aucun modèle en ligne n’est appelé pendant la navigation."
+    ],
+    "limits": "Plainpage fonctionne sur les pages web de Safari. Il ne bloque pas toutes les publicités dans les autres apps et ne garantit pas la suppression de chaque publicité.",
+    "faqTitle": "Questions fréquentes",
+    "faq": [
+      [
+        "Qu’est-ce que Plainpage ?",
+        "Plainpage est un bloqueur de publicités gratuit pour Safari sur iPhone. Il nécessite iOS 17 ou version ultérieure."
+      ],
+      [
+        "Comment Plainpage bloque-t-il les publicités ?",
+        "Plainpage installe deux extensions Safari : le blocage par règles permet à Safari de comparer les éléments aux règles publicitaires ; le filtrage par IA utilise un modèle sur l’appareil pour identifier et supprimer les éléments publicitaires non bloqués par les règles."
+      ],
+      [
+        "La détection envoie-t-elle le contenu des pages web ?",
+        "Non. La détection des publicités s’effectue sur votre appareil. Le modèle local ne fait aucune requête réseau pour la détection et n’envoie pas le contenu des pages web. Jev sert à entraîner le modèle pendant le développement, et non de service en ligne pendant la navigation."
+      ],
+      [
+        "Comment activer Plainpage ?",
+        "Après l’installation, activez les deux extensions de blocage par règles et de filtrage par IA dans les extensions Safari des réglages de l’iPhone. Autorisez l’accès aux sites web pour le filtre IA, puis ouvrez l’app Plainpage et synchronisez les règles avec Safari. Consultez la page Assistance pour les étapes détaillées."
+      ],
+      [
+        "Plainpage bloque-t-il les publicités de toutes les apps ?",
+        "Plainpage fonctionne sur les pages web de Safari, et non comme un bloqueur universel dans les autres apps. Il ne garantit pas la suppression de toutes les publicités sur chaque page."
+      ],
+      [
+        "Que faire si des publicités restent ou si du contenu est supprimé par erreur ?",
+        "Vérifiez que les deux extensions sont activées, synchronisez les règles et rechargez la page. Si du contenu est supprimé par erreur, désactivez d’abord les extensions pour ce site dans le menu des sites web de Safari. Consultez la page Assistance pour les modalités de signalement et les précautions à prendre."
+      ]
+    ],
+    "supportTitle": "Assistance Plainpage",
+    "supportDescription": "Activez les deux extensions Safari de Plainpage, synchronisez les règles, résolvez les problèmes de publicités restantes ou de suppressions par erreur, et protégez vos informations lors d’un signalement public.",
+    "setupTitle": "Activer les deux extensions Safari",
+    "steps": [
+      "Sur l’iPhone, ouvrez Réglages → Apps → Safari → Extensions et activez l’extension de blocage par règles de Plainpage. Selon la version d’iOS, Safari se trouve directement dans l’écran principal des réglages.",
+      "Activez aussi l’extension de filtrage par IA de Plainpage et autorisez son accès à tous les sites web. Les noms affichés dépendent de la langue de l’app : par exemple, « Plainpage Blocker » et « Plainpage AI Filter » en anglais.",
+      "Ouvrez l’app Plainpage et utilisez le bouton de synchronisation des règles avec Safari, puis ouvrez une page dans Safari. Le bouton est intitulé « Sync rules to Safari » en anglais."
+    ],
+    "supportFaqTitle": "Résolution des problèmes",
+    "troubleshooting": [
+      [
+        "Des publicités sont toujours affichées ?",
+        "Vérifiez que les deux extensions sont activées, synchronisez les règles avec Safari depuis l’app, puis rechargez la page. Certaines pages nécessitent de rouvrir l’onglet."
+      ],
+      [
+        "Du contenu a été supprimé par erreur ?",
+        "Le filtre IA n’agit que sur les détections de publicités à forte confiance, mais des erreurs restent possibles. Désactivez d’abord les extensions pour ce site via le menu des sites web de la barre d’adresse de Safari. Vous pouvez signaler le problème sans informations sensibles pour nous permettre de l’examiner ; une correction dans une version précise n’est pas garantie."
+      ]
+    ],
+    "feedbackTitle": "Commentaires et contact",
+    "feedbackLink": "Signaler un problème sur GitHub Issues",
+    "feedbackWarning": "Décrivez le problème et indiquez votre version d’iOS. Si vous joignez une adresse ou une capture d’écran, utilisez uniquement des pages pouvant être rendues publiques et retirez d’abord les informations personnelles. GitHub Issues est public : ne partagez pas de pages connectées à un compte, d’historique de navigation, de comptes, de commandes, de mots de passe ou d’autres informations sensibles.",
+    "feedbackNotice": "GitHub Issues est un canal de signalement public sur le web que vous choisissez d’utiliser, et non une fonction de collecte de données de l’app. Le contenu soumis est envoyé à GitHub et affiché publiquement.",
+    "privacyTitle": "Politique de confidentialité de Plainpage",
+    "privacyDescription": "Politique de confidentialité de l’app iOS Plainpage et de ses extensions Safari : absence de collecte, détection sur l’appareil, autorisations et mises à jour via l’App Store.",
+    "effectiveDate": "Date d’entrée en vigueur : 2026-09-24",
+    "privacyScope": "Cette politique s’applique à l’app iOS Plainpage et à ses extensions Safari.",
+    "privacySections": [
+      [
+        "Nous ne collectons aucune donnée",
+        [
+          "Plainpage ne collecte, ne stocke, n’envoie ni ne vend aucune information personnelle ou donnée d’utilisation. Il n’y a pas de système de comptes ni de SDK d’analyse, de publicité ou de suivi."
+        ]
+      ],
+      [
+        "La détection des publicités se fait sur votre appareil",
+        [
+          "L’extension de blocage par règles transmet ses règles à Safari, qui les compare en interne dans le système ; Plainpage ne voit pas les adresses que vous consultez. L’extension de filtrage par IA exécute un modèle local dans les pages web pour déterminer si leurs éléments sont des publicités. Le processus et ses résultats restent uniquement sur votre appareil et ne sont envoyés à aucun serveur."
+        ]
+      ],
+      [
+        "Autorisation des extensions web",
+        [
+          "Le filtre IA nécessite que vous autorisiez l’accès aux sites web dans les réglages de Safari pour exécuter le modèle local dans la page et supprimer les éléments publicitaires. L’extension ne lit ni ne transmet le contenu des formulaires, les mots de passe, les cookies ou l’historique de navigation."
+        ]
+      ],
+      [
+        "Réseau",
+        [
+          "Plainpage lui-même n’effectue aucune requête réseau. Les mises à jour des règles de blocage et du modèle sont distribuées avec les mises à jour de l’app via l’App Store."
+        ]
+      ],
+      [
+        "Confidentialité des enfants",
+        [
+          "Plainpage ne collecte les données de personne, y compris celles des enfants."
+        ]
+      ],
+      [
+        "Modifications et contact",
+        [
+          "Si cette politique change, cette page et sa date d’entrée en vigueur seront mises à jour. Pour toute question, consultez la page Assistance."
+        ]
+      ]
+    ]
+  },
+  "es": {
+    "name": "Plainpage",
+    "nav": [
+      "Inicio",
+      "Soporte",
+      "Política de privacidad"
+    ],
+    "languageLabel": "Idioma",
+    "homeTitle": "Plainpage — Bloqueador de anuncios gratuito para Safari en iPhone",
+    "homeDescription": "Plainpage es un bloqueador de anuncios gratuito para Safari en iPhone y requiere iOS 17 o posterior. Combina las reglas de bloqueo de Safari con un modelo ejecutado en el dispositivo. La detección de anuncios se realiza en tu dispositivo sin subir el contenido de las páginas web.",
+    "tagline": "Gratis · iPhone · iOS 17 o posterior · Safari",
+    "download": "Descargar en el App Store",
+    "setupLink": "Ver cómo configurarlo",
+    "methodTitle": "Dos capas de bloqueo en Safari",
+    "methods": [
+      "Bloqueo por reglas: Safari compara los elementos con las reglas de anuncios de EasyList, EasyList China y reglas complementarias.",
+      "Filtrado con IA: un modelo en el dispositivo identifica y elimina elementos publicitarios que las reglas no hayan bloqueado. Jev se utiliza para entrenar el modelo durante el desarrollo, no como un modelo en línea durante la navegación."
+    ],
+    "limits": "Plainpage funciona en páginas web de Safari, no como un bloqueador universal dentro de otras apps. No garantiza la eliminación de todos los anuncios.",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": [
+      [
+        "¿Qué es Plainpage?",
+        "Plainpage es un bloqueador de anuncios gratuito para Safari en iPhone. Requiere iOS 17 o posterior."
+      ],
+      [
+        "¿Cómo bloquea los anuncios?",
+        "Plainpage instala dos extensiones de Safari: el bloqueo por reglas permite a Safari comparar los elementos con las reglas de anuncios; el filtrado con IA usa un modelo en el dispositivo para identificar y eliminar elementos publicitarios que las reglas no hayan bloqueado."
+      ],
+      [
+        "¿Se sube el contenido de las páginas para detectar anuncios?",
+        "No. La detección de anuncios se realiza en tu dispositivo. El modelo local no hace consultas de red para la detección ni sube el contenido de las páginas web. Jev se utiliza para entrenar el modelo durante el desarrollo, no como un servicio en línea durante la navegación."
+      ],
+      [
+        "¿Cómo activo Plainpage?",
+        "Tras instalarlo, activa las dos extensiones de bloqueo por reglas y de filtrado con IA en la sección de extensiones de Safari de los ajustes del iPhone. Permite el acceso a sitios web para el filtro de IA, abre la app Plainpage y sincroniza las reglas con Safari. Consulta los pasos detallados en Soporte."
+      ],
+      [
+        "¿Bloquea anuncios en todas las apps?",
+        "Plainpage funciona en páginas web de Safari, no como un bloqueador universal dentro de otras apps. No garantiza eliminar todos los anuncios de cada página."
+      ],
+      [
+        "¿Qué hago si quedan anuncios o se elimina contenido por error?",
+        "Comprueba que ambas extensiones estén activadas, sincroniza las reglas y recarga la página. Si se elimina contenido por error, primero desactiva las extensiones para ese sitio desde el menú de sitios web de Safari. Consulta en Soporte cómo informar del problema y qué precauciones tomar."
+      ]
+    ],
+    "supportTitle": "Soporte de Plainpage",
+    "supportDescription": "Activa ambas extensiones de Safari, sincroniza las reglas, resuelve problemas de anuncios restantes o contenido eliminado por error y protege tus datos al informar de un problema públicamente.",
+    "setupTitle": "Activar las dos extensiones de Safari",
+    "steps": [
+      "En el iPhone, abre Ajustes → Apps → Safari → Extensiones y activa la extensión de bloqueo por reglas de Plainpage. En algunas versiones de iOS, Safari aparece directamente en la pantalla principal de Ajustes.",
+      "Activa también la extensión de filtrado con IA y permite su acceso a todos los sitios web. Los nombres dependen del idioma de la app: por ejemplo, «Plainpage Blocker» y «Plainpage AI Filter» en inglés.",
+      "Abre la app Plainpage, usa el botón para sincronizar las reglas con Safari y abre una página en Safari. En inglés, el botón se llama «Sync rules to Safari»."
+    ],
+    "supportFaqTitle": "Solución de problemas",
+    "troubleshooting": [
+      [
+        "¿Siguen apareciendo anuncios?",
+        "Comprueba que las dos extensiones estén activadas, sincroniza las reglas con Safari desde la app y recarga la página. En algunas páginas es necesario volver a abrir la pestaña."
+      ],
+      [
+        "¿Se ha eliminado contenido por error?",
+        "El filtro de IA solo actúa sobre detecciones de anuncios de alta confianza, pero puede cometer errores. Primero desactiva las extensiones para ese sitio desde el menú de sitios web de la barra de direcciones de Safari. Puedes informar del problema sin datos sensibles para que lo investiguemos; no se garantiza una corrección en una versión concreta."
+      ]
+    ],
+    "feedbackTitle": "Comentarios y contacto",
+    "feedbackLink": "Informar de un problema en GitHub Issues",
+    "feedbackWarning": "Describe el problema e indica tu versión de iOS. Si incluyes una dirección o captura de pantalla, usa solo páginas que puedan hacerse públicas y elimina primero los datos personales. GitHub Issues es público: no compartas páginas con sesión iniciada, historial de navegación, cuentas, pedidos, contraseñas u otra información sensible.",
+    "feedbackNotice": "GitHub Issues es un canal público de comentarios en la web que eliges usar, no una función de recopilación de datos de la app. El contenido enviado se transmite a GitHub y se muestra públicamente.",
+    "privacyTitle": "Política de privacidad de Plainpage",
+    "privacyDescription": "Política de privacidad de la app iOS Plainpage y sus extensiones de Safari: sin recopilación de datos, detección en el dispositivo, permisos y actualizaciones a través del App Store.",
+    "effectiveDate": "Fecha de entrada en vigor: 2026-09-24",
+    "privacyScope": "Esta política se aplica a la app iOS Plainpage y a sus extensiones de Safari.",
+    "privacySections": [
+      [
+        "No recopilamos ningún dato",
+        [
+          "Plainpage no recopila, almacena, sube ni vende información personal o datos de uso. No hay un sistema de cuentas ni SDK de análisis, publicidad o seguimiento."
+        ]
+      ],
+      [
+        "La detección de anuncios se realiza en tu dispositivo",
+        [
+          "La extensión de bloqueo por reglas entrega sus reglas a Safari, que las compara internamente en el sistema; Plainpage no ve las direcciones que visitas. La extensión de filtrado con IA ejecuta un modelo local dentro de las páginas web para determinar si los elementos son anuncios. El proceso y sus resultados permanecen únicamente en tu dispositivo y no se envían a ningún servidor."
+        ]
+      ],
+      [
+        "Permisos de la extensión web",
+        [
+          "El filtro de IA necesita que permitas el acceso a sitios web en los ajustes de Safari para ejecutar el modelo local dentro de la página y eliminar elementos publicitarios. La extensión no lee ni transmite contenido de formularios, contraseñas, cookies o historial de navegación."
+        ]
+      ],
+      [
+        "Red",
+        [
+          "Plainpage no realiza solicitudes de red por sí mismo. Las actualizaciones de reglas de bloqueo y modelos se distribuyen con las actualizaciones de la app a través del App Store."
+        ]
+      ],
+      [
+        "Privacidad de menores",
+        [
+          "Plainpage no recopila datos de nadie, incluidos los menores."
+        ]
+      ],
+      [
+        "Cambios y contacto",
+        [
+          "Si esta política cambia, se actualizarán esta página y su fecha de entrada en vigor. Para cualquier pregunta, consulta Soporte."
+        ]
+      ]
+    ]
+  },
+  "pt-BR": {
+    "name": "Plainpage",
+    "nav": [
+      "Início",
+      "Suporte",
+      "Política de privacidade"
+    ],
+    "languageLabel": "Idioma",
+    "homeTitle": "Plainpage — Bloqueador de anúncios gratuito para Safari no iPhone",
+    "homeDescription": "Plainpage é um bloqueador de anúncios gratuito para Safari no iPhone e requer iOS 17 ou posterior. Combina as regras de bloqueio do Safari com um modelo executado no dispositivo. A detecção de anúncios ocorre no seu dispositivo, sem enviar o conteúdo das páginas web.",
+    "tagline": "Gratuito · iPhone · iOS 17 ou posterior · Safari",
+    "download": "Baixar na App Store",
+    "setupLink": "Ver como configurar",
+    "methodTitle": "Duas camadas de bloqueio no Safari",
+    "methods": [
+      "Bloqueio por regras: o Safari compara os elementos com regras de anúncios da EasyList, EasyList China e regras complementares.",
+      "Filtro de IA: um modelo no dispositivo identifica e remove elementos de anúncios que as regras não bloquearam. Jev é usado para treinar o modelo durante o desenvolvimento, não como um modelo on-line durante a navegação."
+    ],
+    "limits": "Plainpage funciona em páginas web do Safari, não como um bloqueador universal dentro de outros apps. Não garante a remoção de todos os anúncios.",
+    "faqTitle": "Perguntas frequentes",
+    "faq": [
+      [
+        "O que é Plainpage?",
+        "Plainpage é um bloqueador de anúncios gratuito para Safari no iPhone. Requer iOS 17 ou posterior."
+      ],
+      [
+        "Como o Plainpage bloqueia anúncios?",
+        "Plainpage instala duas extensões do Safari: no bloqueio por regras, o Safari compara os elementos com regras de anúncios; no filtro de IA, um modelo no dispositivo identifica e remove elementos de anúncios que as regras não bloquearam."
+      ],
+      [
+        "A detecção envia o conteúdo das páginas web?",
+        "Não. A detecção de anúncios ocorre no seu dispositivo. O modelo local não faz consultas de rede para detectar anúncios nem envia o conteúdo das páginas web. Jev é usado para treinar o modelo durante o desenvolvimento, não como um serviço on-line durante a navegação."
+      ],
+      [
+        "Como ativo o Plainpage?",
+        "Após instalar, ative as duas extensões de bloqueio por regras e de filtro de IA na seção de extensões do Safari nos Ajustes do iPhone. Permita o acesso a sites para o filtro de IA, abra o app Plainpage e sincronize as regras com o Safari. Consulte o Suporte para ver as etapas detalhadas."
+      ],
+      [
+        "O Plainpage bloqueia anúncios em todos os apps?",
+        "Plainpage funciona em páginas web do Safari, não como um bloqueador universal dentro de outros apps. Não garante a remoção de todos os anúncios de cada página."
+      ],
+      [
+        "O que fazer se ainda houver anúncios ou se o conteúdo for removido por engano?",
+        "Confira se as duas extensões estão ativas, sincronize as regras e recarregue a página. Se o conteúdo for removido por engano, primeiro desative as extensões para esse site no menu de sites do Safari. Consulte o Suporte para ver como relatar o problema e quais cuidados tomar."
+      ]
+    ],
+    "supportTitle": "Suporte do Plainpage",
+    "supportDescription": "Ative as duas extensões do Safari, sincronize as regras, resolva problemas de anúncios restantes ou remoções por engano e proteja suas informações ao relatar um problema publicamente.",
+    "setupTitle": "Ativar as duas extensões do Safari",
+    "steps": [
+      "No iPhone, abra Ajustes → Apps → Safari → Extensões e ative a extensão de bloqueio por regras do Plainpage. Em algumas versões do iOS, Safari aparece diretamente na tela principal dos Ajustes.",
+      "Ative também a extensão de filtro de IA e permita o acesso a todos os sites. Os nomes dependem do idioma do app: por exemplo, “Plainpage Blocker” e “Plainpage AI Filter” em inglês.",
+      "Abra o app Plainpage, use o botão para sincronizar as regras com o Safari e abra uma página no Safari. Em inglês, o botão se chama “Sync rules to Safari”."
+    ],
+    "supportFaqTitle": "Solução de problemas",
+    "troubleshooting": [
+      [
+        "Os anúncios ainda aparecem?",
+        "Confira se as duas extensões estão ativas, sincronize as regras com o Safari pelo app e recarregue a página. Em algumas páginas, é necessário reabrir a aba."
+      ],
+      [
+        "O conteúdo foi removido por engano?",
+        "O filtro de IA atua apenas em detecções de anúncios com alta confiança, mas ainda pode cometer erros. Primeiro desative as extensões para esse site pelo menu de sites na barra de endereços do Safari. Você pode relatar o problema sem informações sensíveis para que possamos investigar; não há garantia de correção em uma versão específica."
+      ]
+    ],
+    "feedbackTitle": "Comentários e contato",
+    "feedbackLink": "Relatar um problema no GitHub Issues",
+    "feedbackWarning": "Descreva o problema e informe a versão do iOS. Se incluir um endereço ou uma captura de tela, use apenas páginas que possam ser públicas e remova primeiro as informações pessoais. GitHub Issues é público: não compartilhe páginas com sessão iniciada, histórico de navegação, contas, pedidos, senhas ou outras informações sensíveis.",
+    "feedbackNotice": "GitHub Issues é um canal público de comentários na web que você escolhe usar, não um recurso de coleta de dados do app. O conteúdo enviado é transmitido ao GitHub e exibido publicamente.",
+    "privacyTitle": "Política de privacidade do Plainpage",
+    "privacyDescription": "Política de privacidade do app iOS Plainpage e das extensões do Safari: sem coleta de dados, detecção no dispositivo, permissões e atualizações pela App Store.",
+    "effectiveDate": "Data de vigência: 2026-09-24",
+    "privacyScope": "Esta política se aplica ao app iOS Plainpage e às suas extensões do Safari.",
+    "privacySections": [
+      [
+        "Não coletamos nenhum dado",
+        [
+          "Plainpage não coleta, armazena, envia nem vende informações pessoais ou dados de uso. Não há sistema de contas nem SDKs de análise, publicidade ou rastreamento."
+        ]
+      ],
+      [
+        "A detecção de anúncios ocorre no seu dispositivo",
+        [
+          "A extensão de bloqueio por regras entrega suas regras ao Safari, que faz a comparação internamente no sistema; Plainpage não vê os endereços que você visita. A extensão de filtro de IA executa um modelo local dentro das páginas web para determinar se os elementos são anúncios. O processo e seus resultados ficam apenas no seu dispositivo e não são enviados a nenhum servidor."
+        ]
+      ],
+      [
+        "Permissões da extensão web",
+        [
+          "O filtro de IA precisa que você permita o acesso a sites nos Ajustes do Safari para executar o modelo local na página e remover elementos de anúncios. A extensão não lê nem transmite conteúdo de formulários, senhas, cookies ou histórico de navegação."
+        ]
+      ],
+      [
+        "Rede",
+        [
+          "Plainpage, por si só, não faz solicitações de rede. As atualizações das regras de bloqueio e dos modelos são distribuídas com as atualizações do app pela App Store."
+        ]
+      ],
+      [
+        "Privacidade de crianças",
+        [
+          "Plainpage não coleta dados de ninguém, incluindo crianças."
+        ]
+      ],
+      [
+        "Alterações e contato",
+        [
+          "Se esta política mudar, esta página e sua data de vigência serão atualizadas. Para dúvidas, consulte o Suporte."
+        ]
+      ]
+    ]
+  },
+  "it": {
+    "name": "Plainpage",
+    "nav": ["Home", "Assistenza", "Informativa sulla privacy"],
+    "languageLabel": "Lingua",
+    "homeTitle": "Plainpage — Blocca annunci gratuito per Safari su iPhone",
+    "homeDescription": "Plainpage è un blocca annunci gratuito per Safari su iPhone e richiede iOS 17 o versioni successive. Combina le regole di blocco di Safari con un modello eseguito sul dispositivo. Il rilevamento degli annunci avviene sul dispositivo senza caricare il contenuto delle pagine web.",
+    "tagline": "Gratis · iPhone · iOS 17 o versioni successive · Safari",
+    "download": "Scarica dall’App Store",
+    "setupLink": "Consulta le istruzioni di configurazione",
+    "methodTitle": "Due livelli di blocco in Safari",
+    "methods": ["Blocco tramite regole: Safari confronta gli elementi con le regole pubblicitarie di EasyList, EasyList China e regole supplementari.", "Filtro IA: un modello sul dispositivo identifica e rimuove gli elementi pubblicitari non bloccati dalle regole. Jev viene usato per addestrare il modello durante lo sviluppo, non come modello online durante la navigazione."],
+    "limits": "Plainpage funziona sulle pagine web di Safari, non come blocco universale all’interno di altre app. Non garantisce la rimozione di tutti gli annunci.",
+    "faqTitle": "Domande frequenti",
+    "faq": [
+      ["Che cos’è Plainpage?", "Plainpage è un blocca annunci gratuito per Safari su iPhone. Richiede iOS 17 o versioni successive."],
+      ["Come blocca gli annunci?", "Plainpage installa due estensioni Safari: il blocco tramite regole consente a Safari di confrontare gli elementi con le regole pubblicitarie; il filtro IA usa un modello sul dispositivo per identificare e rimuovere gli elementi pubblicitari non bloccati dalle regole."],
+      ["Il rilevamento carica il contenuto delle pagine web?", "No. Il rilevamento degli annunci avviene sul dispositivo. Il modello locale non effettua richieste di rete per il rilevamento e non carica il contenuto delle pagine web. Jev viene usato per addestrare il modello durante lo sviluppo, non come servizio online durante la navigazione."],
+      ["Come si attiva Plainpage?", "Dopo l’installazione, attiva entrambe le estensioni di blocco tramite regole e di filtro IA nella sezione delle estensioni Safari delle impostazioni dell’iPhone. Consenti al filtro IA di accedere ai siti web, poi apri l’app Plainpage e sincronizza le regole con Safari. Consulta Assistenza per i passaggi dettagliati."],
+      ["Blocca gli annunci in tutte le app?", "Plainpage funziona sulle pagine web di Safari, non come blocco universale all’interno di altre app. Non garantisce la rimozione di ogni annuncio su ogni pagina."],
+      ["Cosa fare se restano annunci o se il contenuto viene rimosso per errore?", "Verifica che entrambe le estensioni siano attive, sincronizza le regole e ricarica la pagina. Se il contenuto viene rimosso per errore, disattiva prima le estensioni per quel sito dal menu dei siti web di Safari. Consulta Assistenza per le modalità di segnalazione e le precauzioni."]
+    ],
+    "supportTitle": "Assistenza Plainpage",
+    "supportDescription": "Attiva entrambe le estensioni Safari, sincronizza le regole, risolvi i problemi di annunci rimasti o rimozioni errate e proteggi i tuoi dati nelle segnalazioni pubbliche.",
+    "setupTitle": "Attivare entrambe le estensioni Safari",
+    "steps": ["Su iPhone, apri Impostazioni → App → Safari → Estensioni e attiva l’estensione di blocco tramite regole di Plainpage. In alcune versioni di iOS, Safari si trova direttamente nella schermata principale delle impostazioni.", "Attiva anche l’estensione di filtro IA e consenti l’accesso a tutti i siti web. I nomi dipendono dalla lingua dell’app: ad esempio, “Plainpage Blocker” e “Plainpage AI Filter” in inglese.", "Apri l’app Plainpage, usa il pulsante per sincronizzare le regole con Safari e apri una pagina in Safari. In inglese, il pulsante si chiama “Sync rules to Safari”."],
+    "supportFaqTitle": "Risoluzione dei problemi",
+    "troubleshooting": [
+      ["Gli annunci sono ancora visibili?", "Verifica che entrambe le estensioni siano attive, sincronizza le regole con Safari dall’app e ricarica la pagina. Per alcune pagine è necessario riaprire la scheda."],
+      ["Il contenuto è stato rimosso per errore?", "Il filtro IA interviene solo sui rilevamenti di annunci con elevata confidenza, ma sono comunque possibili errori. Disattiva prima le estensioni per quel sito dal menu dei siti web nella barra degli indirizzi di Safari. Puoi segnalare il problema senza informazioni sensibili per consentirci di esaminarlo; una correzione in una versione specifica non è garantita."]
+    ],
+    "feedbackTitle": "Feedback e contatti",
+    "feedbackLink": "Segnala un problema su GitHub Issues",
+    "feedbackWarning": "Descrivi il problema e indica la versione di iOS. Se includi un indirizzo o uno screenshot, usa solo pagine che possono essere rese pubbliche e rimuovi prima i dati personali. GitHub Issues è pubblico: non condividere pagine con accesso effettuato, cronologia di navigazione, account, ordini, password o altre informazioni sensibili.",
+    "feedbackNotice": "GitHub Issues è un canale pubblico di feedback sul web che scegli di usare, non una funzione di raccolta dati dell’app. I contenuti inviati vengono trasmessi a GitHub e mostrati pubblicamente.",
+    "privacyTitle": "Informativa sulla privacy di Plainpage",
+    "privacyDescription": "Informativa sulla privacy dell’app iOS Plainpage e delle estensioni Safari: nessuna raccolta dati, rilevamento sul dispositivo, autorizzazioni e aggiornamenti tramite App Store.",
+    "effectiveDate": "Data di entrata in vigore: 2026-09-24",
+    "privacyScope": "Questa informativa si applica all’app iOS Plainpage e alle sue estensioni Safari.",
+    "privacySections": [
+      ["Non raccogliamo alcun dato", ["Plainpage non raccoglie, memorizza, carica né vende informazioni personali o dati di utilizzo. Non esiste un sistema di account e non sono inclusi SDK di analisi, pubblicità o tracciamento."]],
+      ["Il rilevamento degli annunci avviene sul dispositivo", ["L’estensione di blocco tramite regole passa le regole a Safari, che le confronta internamente nel sistema; Plainpage non vede gli indirizzi visitati. L’estensione di filtro IA esegue un modello locale nelle pagine web per stabilire se gli elementi sono annunci. Il processo e i risultati rimangono solo sul dispositivo e non vengono inviati ad alcun server."]],
+      ["Autorizzazioni dell’estensione web", ["Il filtro IA richiede di consentire l’accesso ai siti web nelle impostazioni di Safari per eseguire il modello locale nella pagina e rimuovere gli elementi pubblicitari. L’estensione non legge né trasmette contenuti dei moduli, password, cookie o cronologia di navigazione."]],
+      ["Rete", ["Plainpage stesso non effettua richieste di rete. Gli aggiornamenti delle regole di blocco e dei modelli vengono distribuiti insieme agli aggiornamenti dell’app tramite App Store."]],
+      ["Privacy dei minori", ["Plainpage non raccoglie dati di nessuno, inclusi i minori."]],
+      ["Modifiche e contatti", ["In caso di modifiche a questa informativa, verranno aggiornate questa pagina e la data di entrata in vigore. Per domande, consulta Assistenza."]]
+    ]
+  },
+  "ru": {
+    "name": "Plainpage",
+    "nav": ["Главная", "Поддержка", "Политика конфиденциальности"],
+    "languageLabel": "Язык",
+    "homeTitle": "Plainpage — Бесплатный блокировщик рекламы для Safari на iPhone",
+    "homeDescription": "Plainpage — бесплатный блокировщик рекламы для Safari на iPhone. Требуется iOS 17 или новее. Он сочетает правила блокировки Safari с моделью, работающей на устройстве. Реклама распознаётся на вашем устройстве, без отправки содержимого веб-страниц.",
+    "tagline": "Бесплатно · iPhone · iOS 17 или новее · Safari",
+    "download": "Скачать в App Store",
+    "setupLink": "Инструкции по настройке",
+    "methodTitle": "Два уровня блокировки рекламы в Safari",
+    "methods": ["Блокировка по правилам: Safari сопоставляет элементы с правилами рекламы из EasyList, EasyList China и дополнительных списков.", "ИИ-фильтр: модель на устройстве распознаёт и удаляет рекламные элементы, пропущенные правилами. Jev используется для обучения модели на этапе разработки, а не как онлайн-модель во время просмотра страниц."],
+    "limits": "Plainpage работает с веб-страницами в Safari, а не как универсальный блокировщик внутри других приложений. Удаление всей рекламы не гарантируется.",
+    "faqTitle": "Частые вопросы",
+    "faq": [
+      ["Что такое Plainpage?", "Plainpage — бесплатный блокировщик рекламы для Safari на iPhone. Требуется iOS 17 или новее."],
+      ["Как Plainpage блокирует рекламу?", "Plainpage устанавливает два расширения Safari: при блокировке по правилам Safari сопоставляет элементы с правилами рекламы; ИИ-фильтр использует модель на устройстве для распознавания и удаления рекламных элементов, пропущенных правилами."],
+      ["Отправляется ли содержимое страниц для распознавания рекламы?", "Нет. Реклама распознаётся на вашем устройстве. Локальная модель не делает сетевых запросов для распознавания и не отправляет содержимое веб-страниц. Jev используется для обучения модели на этапе разработки, а не как онлайн-сервис во время просмотра страниц."],
+      ["Как включить Plainpage?", "После установки включите оба расширения — блокировку по правилам и ИИ-фильтр — в разделе расширений Safari в настройках iPhone. Разрешите ИИ-фильтру доступ к сайтам, затем откройте приложение Plainpage и синхронизируйте правила с Safari. Подробные шаги приведены на странице поддержки."],
+      ["Блокирует ли Plainpage рекламу во всех приложениях?", "Plainpage работает с веб-страницами в Safari, а не как универсальный блокировщик внутри других приложений. Удаление всей рекламы на каждой странице не гарантируется."],
+      ["Что делать, если реклама осталась или содержимое удалено по ошибке?", "Проверьте, что оба расширения включены, синхронизируйте правила и обновите страницу. Если содержимое удалено по ошибке, сначала отключите расширения для этого сайта через меню сайтов в Safari. Способы сообщения о проблемах и меры предосторожности описаны на странице поддержки."]
+    ],
+    "supportTitle": "Поддержка Plainpage",
+    "supportDescription": "Включение двух расширений Safari, синхронизация правил, устранение оставшейся рекламы или ошибочного удаления и защита данных при публичном сообщении о проблеме.",
+    "setupTitle": "Включите оба расширения Safari",
+    "steps": ["На iPhone откройте Настройки → Приложения → Safari → Расширения и включите расширение блокировки по правилам Plainpage. В некоторых версиях iOS Safari находится прямо на главном экране настроек.", "Включите также ИИ-фильтр и разрешите доступ ко всем сайтам. Названия зависят от языка приложения: например, на английском это “Plainpage Blocker” и “Plainpage AI Filter”.", "Откройте приложение Plainpage, нажмите кнопку синхронизации правил с Safari, затем откройте страницу в Safari. На английском кнопка называется “Sync rules to Safari”."],
+    "supportFaqTitle": "Устранение проблем",
+    "troubleshooting": [
+      ["Реклама всё ещё отображается?", "Проверьте, что оба расширения включены, синхронизируйте правила с Safari из приложения и обновите страницу. Для некоторых страниц нужно заново открыть вкладку."],
+      ["Содержимое удалено по ошибке?", "ИИ-фильтр действует только при высокой уверенности в распознавании рекламы, но ошибки возможны. Сначала отключите расширения для этого сайта через меню сайтов в адресной строке Safari. Можно сообщить о проблеме без конфиденциальных данных, чтобы мы могли её изучить; исправление в конкретной версии не гарантируется."]
+    ],
+    "feedbackTitle": "Обратная связь и контакты",
+    "feedbackLink": "Сообщить о проблеме в GitHub Issues",
+    "feedbackWarning": "Опишите проблему и укажите версию iOS. Если добавляете адрес или снимок экрана, используйте только страницы, которые можно сделать публичными, и сначала удалите личные данные. GitHub Issues — публичный раздел: не публикуйте страницы с выполненным входом, историю посещений, учётные записи, заказы, пароли и другие конфиденциальные сведения.",
+    "feedbackNotice": "GitHub Issues — публичный веб-канал обратной связи, которым вы пользуетесь по своему выбору, а не функция сбора данных приложения. Отправленный текст и материалы передаются в GitHub и публикуются.",
+    "privacyTitle": "Политика конфиденциальности Plainpage",
+    "privacyDescription": "Политика конфиденциальности приложения Plainpage для iOS и расширений Safari: отсутствие сбора данных, распознавание на устройстве, разрешения и обновления через App Store.",
+    "effectiveDate": "Дата вступления в силу: 2026-09-24",
+    "privacyScope": "Эта политика применяется к приложению Plainpage для iOS и его расширениям Safari.",
+    "privacySections": [
+      ["Мы не собираем никаких данных", ["Plainpage не собирает, не хранит, не загружает на серверы и не продаёт личную информацию или данные об использовании. Нет системы учётных записей и SDK аналитики, рекламы или отслеживания."]],
+      ["Реклама распознаётся только на вашем устройстве", ["Расширение блокировки по правилам передаёт правила Safari, который сопоставляет их внутри системы; Plainpage не видит посещаемые вами адреса. ИИ-фильтр запускает локальную модель внутри веб-страниц, чтобы определить, являются ли элементы рекламой. Процесс и результаты остаются только на вашем устройстве и не отправляются ни на какой сервер."]],
+      ["Разрешения веб-расширения", ["ИИ-фильтру нужно разрешить доступ к сайтам в настройках Safari, чтобы запускать локальную модель внутри страницы и удалять рекламные элементы. Расширение не читает и не передаёт содержимое форм, пароли, Cookie или историю посещений."]],
+      ["Сеть", ["Сам Plainpage не делает сетевых запросов. Обновления правил блокировки и модели распространяются вместе с обновлениями приложения через App Store."]],
+      ["Конфиденциальность детей", ["Plainpage не собирает данные ни о ком, включая детей."]],
+      ["Изменения и контакты", ["При изменении этой политики будут обновлены эта страница и дата вступления в силу. По вопросам обращайтесь на страницу поддержки."]]
+    ]
+  }
+}

@@ -3,4 +3,7 @@
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans","Noto Sans CJK SC",sans-serif}
 main{max-width:720px;margin:0 auto;padding:48px 16px 64px}h1{font-size:28px;margin:0 0 4px}h2{font-size:19px;margin:32px 0 8px}
 p,li{color:var(--fg)}.muted{color:var(--muted);font-size:14px}a{color:var(--accent)}hr{border:0;border-top:1px solid var(--line);margin:40px 0}
-nav{display:flex;gap:16px;margin-bottom:32px;font-size:15px}
+nav{display:flex;flex-wrap:wrap;gap:8px 16px;margin-bottom:32px;font-size:15px}
+h3{font-size:17px;margin:24px 0 8px}h3+p{margin-top:0}a{overflow-wrap:anywhere}
+.languages{border-bottom:1px solid var(--line);padding-bottom:16px;font-size:14px}
+nav a[aria-current="page"]{font-weight:600;text-decoration-thickness:2px}
