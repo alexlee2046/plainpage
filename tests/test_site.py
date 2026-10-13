@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 import build_site as site
 
-LOCALES = json.loads((ROOT / "content/locales.json").read_text())
+LOCALES = json.loads((ROOT / "content/locales.json").read_text(encoding="utf-8"))
 
 
 class Page(HTMLParser):
@@ -50,7 +50,7 @@ class Page(HTMLParser):
 
 
 def load_page(lang, page):
-    return Page((ROOT / site.output_path(lang, page)).read_text())
+    return Page((ROOT / site.output_path(lang, page)).read_text(encoding="utf-8"))
 
 
 class SiteTests(unittest.TestCase):
@@ -59,7 +59,7 @@ class SiteTests(unittest.TestCase):
         self.assertEqual(len(files), 31)
         for filename, content in files.items():
             with self.subTest(file=filename):
-                self.assertEqual((ROOT / filename).read_text(), content)
+                self.assertEqual((ROOT / filename).read_text(encoding="utf-8"), content)
 
     def test_all_page_metadata(self):
         for lang in site.LANGUAGES:
@@ -184,7 +184,7 @@ class SiteTests(unittest.TestCase):
                 for heading, texts in data["privacySections"]:
                     for text in [heading] + texts:
                         self.assertIn("".join(text.split()), privacy.visible)
-                source = (ROOT / site.output_path(lang, "privacy.html")).read_text()
+                source = (ROOT / site.output_path(lang, "privacy.html")).read_text(encoding="utf-8")
                 for anchor in anchors[lang]:
                     self.assertIn(anchor, source)
                 support = load_page(lang, "support.html")

@@ -133,7 +133,7 @@ def render(lang, page, data):
 
 
 def generate():
-    locales = json.loads((ROOT / "content/locales.json").read_text())
+    locales = json.loads((ROOT / "content/locales.json").read_text(encoding="utf-8"))
     if set(locales) != set(LANGUAGES):
         raise ValueError("Expected exactly ten languages")
     files = {output_path(lang, page): render(lang, page, locales[lang])
@@ -152,11 +152,11 @@ def main():
     for filename, content in generate().items():
         path = ROOT / filename
         if args.check:
-            if not path.is_file() or path.read_text() != content:
+            if not path.is_file() or path.read_text(encoding="utf-8") != content:
                 stale.append(filename)
         else:
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(content)
+            path.write_text(content, encoding="utf-8")
     if stale:
         raise SystemExit("Stale generated files: " + ", ".join(stale))
     print("Checked" if args.check else "Generated", f"{len(LANGUAGES) * len(PAGES)} pages and sitemap.xml")
